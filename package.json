@@ -9,7 +9,8 @@
         "collectCoverage": true
     },
     "scripts": {
-        "test": "jest && codecov"
+        "test": "jest && codecov",
+        "posttest:coverage": "curl -s https://codecov.io/bash | bash -s - -t be1da9c9-77ce-4164-9e1b-5f0cafb8f7b7"
     },
     "author": "Angel Dionisio",
     "license": "ISC",
