@@ -1,0 +1,22 @@
+{
+    "name": "codecov_test",
+    "version": "1.0.0",
+    "description": "testing codecov integration",
+    "main": "index.js",
+    "jest": {
+        "verbose": true,
+        "coverageDirectory": "./coverage/",
+        "collectCoverage": true
+    },
+    "scripts": {
+        "test": "jest && codecov"
+    },
+    "author": "Angel Dionisio",
+    "license": "ISC",
+    "devDependencies": {
+        "codecov": "^3.1.0",
+        "expect.js": "^0.3.1",
+        "jest": "^23.6.0",
+        "mocha": "^5.2.0"
+    }
+}
