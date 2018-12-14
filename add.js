@@ -1,9 +1,9 @@
 const adders = {
-    add: function (x, y) {
+    add: (x, y) => {
         return x + y;
     },
     
-    arrayAdder: function (arr) {
+    arrayAdder: (arr) => {
         return arr.reduce(add);
     }    
 }
