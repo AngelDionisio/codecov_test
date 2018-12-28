@@ -18,12 +18,14 @@
     },
     "scripts": {
         "test": "jest && codecov",
-        "posttest:coverage": "curl -s https://codecov.io/bash | bash -s - -t be1da9c9-77ce-4164-9e1b-5f0cafb8f7b7"
+        "post_codecov": "curl -s https://codecov.io/bash | bash -s - -t be1da9c9-77ce-4164-9e1b-5f0cafb8f7b7",
+        "post_coveralls": "node_modules/.bin/jest --coverage --coverageReporters=text-lcov | node_modules/.bin/coveralls"
     },
     "author": "Angel Dionisio",
     "license": "ISC",
     "devDependencies": {
         "codecov": "^3.1.0",
+        "coveralls": "^3.0.2",
         "expect.js": "^0.3.1",
         "jest": "^23.6.0",
         "mocha": "^5.2.0",
